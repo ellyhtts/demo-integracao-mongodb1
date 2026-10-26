@@ -1,0 +1,381 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: My first collection
+meta:
+  id: wrk_5ce0603a1eef45f9bfb13e8e48c96691
+  created: 1793041050730
+  modified: 1793041050730
+  description: ""
+collection:
+  - name: Estudantes
+    meta:
+      id: fld_05b6cbbd02744a59a7fcc948d4c85682
+      created: 1793042157541
+      modified: 1793042618804
+      sortKey: -1793042157542
+      description: ""
+    children:
+      - url: http://localhost:8080/estudantes
+        name: Cadastrar Estudante
+        meta:
+          id: req_6755e4d0327749e08bece7f25bbaf67f
+          created: 1793041054066
+          modified: 1793042727018
+          isPrivate: false
+          description: ""
+          sortKey: -1793042726926
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "id": "1",
+              "nome": "João da Silva",
+              "idade": 30,
+              "email": "joao.silva@email.com"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/estudantes
+        name: Buscar Todos
+        meta:
+          id: req_04cef852a6c242fd9b6543ab40ccc240
+          created: 1793041573300
+          modified: 1793042730191
+          isPrivate: false
+          description: ""
+          sortKey: -1793042726826
+        method: GET
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/estudantes/1
+        name: Buscar por ID
+        meta:
+          id: req_f70e9757186b49feb35c855909fab1b7
+          created: 1793041739226
+          modified: 1793042744349
+          isPrivate: false
+          description: ""
+          sortKey: -1793042726751
+        method: GET
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/estudantes/1
+        name: Atualizar Estudante
+        meta:
+          id: req_cbb813c4a80c453fa44b8848aa8a397c
+          created: 1793041854691
+          modified: 1793043347143
+          isPrivate: false
+          description: ""
+          sortKey: -1793042726726
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "nome": "João da Silva Atualizado",
+              "idade": 31,
+              "email": "joao.silva@email.com"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/estudantes/1
+        name: Excluir Estudante
+        meta:
+          id: req_ebb401b37fd644f2843c48d41f87686a
+          created: 1793042056528
+          modified: 1793042741471
+          isPrivate: false
+          description: ""
+          sortKey: -1793042726776
+        method: DELETE
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Professores
+    meta:
+      id: fld_e12d4ce0135f426c873fd732b6fb4bdc
+      created: 1793043084565
+      modified: 1793043126040
+      sortKey: -1793042157492
+      description: ""
+    children:
+      - url: http://localhost:8080/professores/1
+        name: Atualizar Professor
+        meta:
+          id: req_003c5f1895ae4c9f988a9f08b0d8abff
+          created: 1793043084565
+          modified: 1793043598424
+          isPrivate: false
+          description: ""
+          sortKey: -1793042726726
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |
+            {
+              "nome": "Prof. Carlos Mendes",
+              "idade": 46,
+              "email": "carlos.mendes@email.com"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/professores
+        name: Buscar Todos
+        meta:
+          id: req_146da1d62d204743984c3e8c6e28c9cb
+          created: 1793043084565
+          modified: 1793043519156
+          isPrivate: false
+          description: ""
+          sortKey: -1793042726826
+        method: GET
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/professores/1
+        name: Excluir Professor
+        meta:
+          id: req_4c9633a82abb4df2a2427ed11ac61957
+          created: 1793043084565
+          modified: 1793043675477
+          isPrivate: false
+          description: ""
+          sortKey: -1793042726776
+        method: DELETE
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/professores/1
+        name: Buscar por ID
+        meta:
+          id: req_808e312d9e1a45ac9b74c201efff18d6
+          created: 1793043084565
+          modified: 1793043588013
+          isPrivate: false
+          description: ""
+          sortKey: -1793042726751
+        method: GET
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/professores
+        name: Cadastrar Professor
+        meta:
+          id: req_e2e9e3ff136348848ea68c1fb126a111
+          created: 1793043084565
+          modified: 1793043495551
+          isPrivate: false
+          description: ""
+          sortKey: -1793042726926
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "id": "1",
+              "nome": "Carlos Mendes",
+              "idade": 45,
+              "email": "carlos.mendes@email.com"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Cursos
+    meta:
+      id: fld_0365e4f9b1584b4295ca99ae08b1e6e7
+      created: 1793043107460
+      modified: 1793043107460
+      sortKey: -1793042157442
+      description: ""
+    children:
+      - url: http://localhost:8080/cursos/1
+        name: Atualizar Curso
+        meta:
+          id: req_a6238e91b8f944d589043c7948a9552e
+          created: 1793043107460
+          modified: 1793043352818
+          isPrivate: false
+          description: ""
+          sortKey: -1793042726726
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "descricao": "Bacharelado em Sistemas de Informação"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/cursos
+        name: Cadastrar Curso
+        meta:
+          id: req_a7362fb1ef3947fba30174519f45ff21
+          created: 1793043107460
+          modified: 1793043229311
+          isPrivate: false
+          description: ""
+          sortKey: -1793042726926
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "id": "1",
+              "descricao": "Sistemas de Informação"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/cursos
+        name: Buscar Todos
+        meta:
+          id: req_ac56873ea83f44a3ba7b8b1c240ac421
+          created: 1793043107460
+          modified: 1793043250639
+          isPrivate: false
+          description: ""
+          sortKey: -1793042726826
+        method: GET
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/cursos/1
+        name: Buscar por ID
+        meta:
+          id: req_b8db46921e7b43a88d44bd519c3deeba
+          created: 1793043107460
+          modified: 1793043270797
+          isPrivate: false
+          description: ""
+          sortKey: -1793042726751
+        method: GET
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/cursos/1
+        name: Excluir Curso
+        meta:
+          id: req_fed94deed2ff41d1a4c744a8d7a032db
+          created: 1793043107460
+          modified: 1793043444457
+          isPrivate: false
+          description: ""
+          sortKey: -1793042726776
+        method: DELETE
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_65819e42668b41a509d95d05d731c2e9595b03ff
+    created: 1793041050759
+    modified: 1793041050759
+environments:
+  name: Base Environment
+  meta:
+    id: env_65819e42668b41a509d95d05d731c2e9595b03ff
+    created: 1793041050752
+    modified: 1793041050752
+    isPrivate: false

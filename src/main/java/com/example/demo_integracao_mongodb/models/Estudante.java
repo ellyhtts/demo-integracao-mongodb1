@@ -6,16 +6,17 @@ import org.springframework.data.mongodb.core.mapping.Field;
 
 @Document(collection = "Estudante")
 public class Estudante {
+
     @Id
     private String id;
 
-    @Field ("nome")
+    @Field("nome")
     private String nome;
 
-    @Field ("idade")
+    @Field("idade")
     private int idade;
 
-    @Field ("email_principal")
+    @Field("email_principal")
     private String email;
 
     public Estudante() {
